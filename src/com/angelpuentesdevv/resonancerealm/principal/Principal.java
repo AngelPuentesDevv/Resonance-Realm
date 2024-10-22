@@ -1,6 +1,7 @@
 package com.angelpuentesdevv.resonancerealm.principal;
 
 import com.angelpuentesdevv.resonancerealm.modelos.Cancion;
+import com.angelpuentesdevv.resonancerealm.modelos.Favoritos;
 import com.angelpuentesdevv.resonancerealm.modelos.Podcast;
 
 
@@ -34,5 +35,8 @@ public class Principal {
         System.out.println("Total de reproducciones: " + miPodcast.getTotalDeReproducciones());
         System.out.println("Total de likes: " + miPodcast.getTotalDeMeGusta());
 
+        Favoritos favoritos = new Favoritos();
+        favoritos.incluye(miCancion);
+        favoritos.incluye(miPodcast);
     }
 }

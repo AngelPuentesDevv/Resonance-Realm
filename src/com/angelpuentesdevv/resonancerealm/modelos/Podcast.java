@@ -6,6 +6,15 @@ public class Podcast extends Audio {
 
     private String descripcion;
 
+    @Override
+    public int getClasificacion() {
+        if (getTotalDeMeGusta() > 5000){
+            return 20;
+        } else {
+            return 10;
+        }
+    }
+
     public String getPresentador() {
         return presentador;
     }
